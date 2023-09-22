@@ -8,5 +8,12 @@
 </head>
 <body>
     <h1>Add New Location</h1>
-    <p>Under construction...</p>
+    <form method="post" action="/locations/add/">
+        {% csrf_token %}
+        <input type="text" name="name" placeholder="name">
+        <input type="text" name="loc_x" placeholder="x coordinates">
+        <input type="text" name="loc_y" placeholder="y coordinates">
+        <input type="text" name="description" placeholder="description">
+        <input type="submit" value="submit">
+    </form>
 </body>
