@@ -24,5 +24,5 @@ urlpatterns = [
     path('index/', views.index),
     path('locations/list/', views.locations_list),
     path('locations/add/', views.locations_add),
-    #path('locations/delete/', views.locations_delete),
+    path('locations/delete/', views.locations_delete),
 ]

@@ -16,15 +16,17 @@
                 <th>X</th>
                 <th>Y</th>
                 <th>Description</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
-            {% for obj in data_list %}
+            {% for obj in data %}
             <tr>
                 <td>{{ obj.id }}</td>
                 <td>{{ obj.name }}</td>
                 <td>{{ obj.loc_x }}</td>
                 <td>{{ obj.loc_y }}</td>
+                <td>{{ obj.description }}</td>
                 <td>
                     <a href="/locations/delete/?nid={{ obj.id }}"> Delete </a>
                 </td>
